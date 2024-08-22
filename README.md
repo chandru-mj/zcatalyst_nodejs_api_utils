@@ -4,7 +4,7 @@
 
 This repository contains a collection of functions for interacting with Zoho Catalyst, a serverless platform. These functions cover common CRUD (Create, Read, Update, Delete) operations and user management tasks using [Zoho Catalyst NodeJs SDK](https://docs.catalyst.zoho.com/en/sdk/nodejs/v2/overview/).
 
-## Features
+### 🚀 Features
 
 - **ZCQL Query Execution**: Run ZCQL queries and fetch data from Catalyst datastore.
 - **Record Counting**: Get the count of records in a table with optional filtering.
@@ -14,7 +14,7 @@ This repository contains a collection of functions for interacting with Zoho Cat
 - **File Management**: Upload, download, and delete files from Catalyst's file store.
 - **User Management**: Register, enable, disable, and delete end users in the Catalyst platform.
 
-## Installation
+### ⚙️ Dependencies
 
 Download the file **catalystDBFunctions.js and store it in your function to access the methods
 
@@ -25,7 +25,7 @@ npm install lodash
 npm install zcatalyst-sdk-node
 ```
 
-## Usage
+### 📝 Usage
 
 You can import and use these functions in your Node.js application:
 ```javascript
@@ -72,7 +72,10 @@ catalystFunctions.ZCQL(app, 'SELECT * FROM table_name')
 
 Contributions are welcome! Please fork this repository and submit a pull request for any feature requests, bug fixes, or improvements.
 
-## License
+### 💡 Why Use These Utilities?
+These utility functions provide a cleaner, more abstracted way of working with Zoho Catalyst. By encapsulating repetitive tasks and error handling, they make your code more maintainable, reusable, and consistent. For more details, check out the [README](https://github.com/yourusername/catalyst-db-functions/blob/main/README.md).
+
+### 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
