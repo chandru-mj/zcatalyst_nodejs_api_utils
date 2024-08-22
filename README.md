@@ -68,7 +68,7 @@ catalystFunctions.ZCQL(app, 'SELECT * FROM table_name')
 - **deleteEndUser(app, userId)**: Deletes an end user by their ID.
 - **getCurrentEndUserDetails(app)**: Retrieves details of the current user on whose scope the function is being executed.
 
-## Contributing
+### Contributing
 
 Contributions are welcome! Please fork this repository and submit a pull request for any feature requests, bug fixes, or improvements.
 
@@ -79,6 +79,6 @@ These utility functions provide a cleaner, more abstracted way of working with Z
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+### Contact
 
 For any inquiries, please open a discussion thread.
