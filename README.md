@@ -29,12 +29,13 @@ npm install zcatalyst-sdk-node
 
 You can import and use these functions in your Node.js application:
 ```javascript
-// Initialize Zoho Catalyst Project
-cosnt app = catalyst.initialize(req);
-```
-```javascript
 // Import functions util file
 const catalystFunctions =  require('./catalystDBFunctions');
+```
+
+```javascript
+// Initialize Zoho Catalyst Project
+cosnt app = catalyst.initialize(req);
 ```
 
 ```javascript
@@ -46,6 +47,27 @@ catalystFunctions.ZCQL(app, 'SELECT * FROM table_name')
   .catch(err => {
     console.error('Error executing query:', err);
   });
+```
+
+```javascript
+// Example usage with Express.js (advance i/o function - NodeJS)
+const zcatalystSdk = require("zcatalyst-sdk-node");
+const catalystFunctions =  require('./catalystDBFunctions');
+const express = require('express');
+const expressApp = express();
+
+expressApp.get("/fetch", async (req, res)=>{
+  cosnt app = catalyst.initialize(req);
+  const fetchData = await catalystFunctions.ZCQL(app, 'SELECT * FROM table_name')
+    .catch(err => {
+      // handle error
+      console.error('Error executing query:', err);
+      return {};
+    });
+    res.json(fetchData);
+});
+
+module.exports = expressApp;
 ```
 
 ### Function Descriptions
